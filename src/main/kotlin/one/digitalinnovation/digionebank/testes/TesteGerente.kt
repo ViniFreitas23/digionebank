@@ -5,7 +5,8 @@ import one.digitalinnovation.digionebank.Funcionario
 import one.digitalinnovation.digionebank.Gerente
 
 fun main() {
-    val maria = Gerente(nome = "Maria Medina", cpf = "1234567899", salario = 6000.0)
+    val maria = Gerente(nome = "Maria Medina", cpf = "1234567899", salario = 6000.0,senha = "password")
     ImprimeRelatorioFuncionario.imprime(maria)
+    TesteAutenticacao().autentica(maria)
 }
 
